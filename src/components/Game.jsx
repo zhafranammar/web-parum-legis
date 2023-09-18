@@ -59,7 +59,7 @@ function GameSection() {
 
   return (
     <section
-      id="game-section"
+      id="game"
       className="dark:bg-[#952323] dark:text-[#F2E8C6] bg-[#F2E8C6] text-[#952323] container mx-auto py-10 px-8 max-w-full items-center flex flex-col"
     >
       <h2

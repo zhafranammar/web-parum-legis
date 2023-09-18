@@ -29,9 +29,12 @@ function GetStarted() {
           Dapatkan Pengalaman Bermain Game Hukum Yang Menyenangkan Bersama Kami
           di Parum Legis
         </p>
-        <button className="bg-[#952323] text-[#F2E8C6] dark:bg-[#F2E8C6] dark:text-[#952323] px-8 py-2 rounded-md text-xl hover:bg-[#7B1F1F] mb-4 font-tektur">
+        <a
+          href="#getproduct"
+          className="bg-[#952323] text-[#F2E8C6] dark:bg-[#F2E8C6] dark:text-[#952323] px-8 py-2 rounded-md text-xl hover:bg-[#7B1F1F] mb-4 font-tektur"
+        >
           Get Product
-        </button>
+        </a>
       </div>
     </section>
   )

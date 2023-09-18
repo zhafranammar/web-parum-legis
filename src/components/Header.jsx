@@ -62,17 +62,7 @@ function Header() {
           <ul className="dark:text-[#952323] text-[#F2E8C6] font-medium md:flex items-center md:space-x-5 md:mr-10">
             <li className="pb-1 md:pb-0">
               <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                onClick={toggleClass}
-              >
-                About Us
-              </Link>
-            </li>
-            <li className="pb-1 md:pb-0">
-              <Link
-                to="skills"
+                to="game"
                 smooth={true}
                 duration={500}
                 onClick={toggleClass}
@@ -90,14 +80,14 @@ function Header() {
                 Get Products
               </Link>
             </li>
-            <li>
+            <li className="pb-1 md:pb-0">
               <Link
-                to="contact"
+                to="about"
                 smooth={true}
                 duration={500}
                 onClick={toggleClass}
               >
-                Contact Us
+                About Us
               </Link>
             </li>
             <li className="md:pb-0 mt-1">
