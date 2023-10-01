@@ -60,7 +60,7 @@ function AboutUs() {
         </p>
         <div className="flex justify-center space-x-4 mt-4 w-full ">
           <a
-            href={isLoading ? "#" : socialLinks.WhatsApp}
+            href="https://wa.me/6285702003552"
             target="_blank"
             rel="noopener noreferrer"
           >

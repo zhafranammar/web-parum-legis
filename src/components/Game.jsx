@@ -69,7 +69,7 @@ function GameSection() {
         About This Game
       </h2>
       <p
-        className="text-md font-adlam md:text-xl xl:text-2xl pt-2"
+        className="text-md font-adlam md:text-xl xl:text-2xl pt-2 mx-2 text-center md:mx-16"
         data-aos="fade-up"
       >
         {isLoading ? "Loading..." : gameDescription}

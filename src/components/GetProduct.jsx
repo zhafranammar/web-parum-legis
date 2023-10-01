@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react"
 // Asumsikan kita mempunyai logo-logo tersebut
 import shopeeLogo from "../assets/shopeeLogo.png"
 import tokpedLogo from "../assets/tokpedLogo.png"
+import waLogo from "../assets/whatsapp.png"
 
 function GetProduct() {
   const [productLinks, setProductLinks] = useState({
@@ -45,6 +46,18 @@ function GetProduct() {
         icons below!
       </p>
       <div className="flex justify-center space-x-4 mt-4">
+        <a
+          href="https://wa.me/6285702003552"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="rounded-full w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 hover:opacity-75 transition-opacity duration-300"
+            src={waLogo}
+            alt="Whatsapp"
+            data-aos="flip-left"
+          />
+        </a>
         <a
           href={isLoading ? "#" : productLinks.shopee}
           target="_blank"
