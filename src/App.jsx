@@ -7,6 +7,7 @@ import GetProduct from "./components/GetProduct"
 import Footer from "./components/Footer"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import Donation from "./components/Donation"
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <GetStarted />
       <GameSection />
       <GetProduct />
+      <Donation />
       <AboutUs />
       <Footer />
     </>

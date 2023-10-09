@@ -15,11 +15,15 @@ function Header() {
   }
 
   useEffect(() => {
+    const rootElement = document.getElementById("root")
     if (darkMode) {
       document.getElementById("root").classList.add("dark")
     } else {
       document.getElementById("root").classList.remove("dark")
     }
+    // Picu event custom setiap kali kelas berubah
+    const classChangedEvent = new Event("classChanged")
+    rootElement.dispatchEvent(classChangedEvent)
   }, [darkMode])
 
   return (
@@ -78,6 +82,16 @@ function Header() {
                 onClick={toggleClass}
               >
                 Get Products
+              </Link>
+            </li>
+            <li className="pb-1 md:pb-0">
+              <Link
+                to="donation"
+                smooth={true}
+                duration={500}
+                onClick={toggleClass}
+              >
+                Donation
               </Link>
             </li>
             <li className="pb-1 md:pb-0">
