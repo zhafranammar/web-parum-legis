@@ -29,7 +29,10 @@ function Donation() {
   const qrDonation = isDarkMode ? qrDonationDark : qrDonationLight
 
   return (
-    <section className="dark:bg-[#952323] dark:text-[#F2E8C6] bg-[#F2E8C6] text-[#952323] container mx-auto py-10 px-8 max-w-full items-center flex flex-col">
+    <section
+      id="donation"
+      className="dark:bg-[#952323] dark:text-[#F2E8C6] bg-[#F2E8C6] text-[#952323] container mx-auto py-10 px-8 max-w-full items-center flex flex-col"
+    >
       <h2
         className="text-2xl md:text-4xl xl:text-5xl font-tektur"
         data-aos="fade-up"
@@ -53,11 +56,11 @@ function Donation() {
 
       <a
         href="https://saweria.co/parumlegis" // Replace with your actual Saweria link.
-        className="text-[#952323] dark:text-[#F2E8C6] mt-4 underline"
+        className="text-[#952323] dark:text-[#F2E8C6] mt-4 text-md font-adlam md:text-xl xl:text-2xl pt-2 mx-2 text-center md:mx-16 underline"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Or donate through Saweria
+        Or donate Via Saweria
       </a>
     </section>
   )
