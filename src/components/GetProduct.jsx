@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react"
 import shopeeLogo from "../assets/shopeeLogo.png"
 import tokpedLogo from "../assets/tokpedLogo.png"
 import waLogo from "../assets/whatsapp.png"
+import winLogo from "../assets/windows.png"
+import androLogo from "../assets/android.png"
 
 function GetProduct() {
   const [productLinks, setProductLinks] = useState({
@@ -36,14 +38,52 @@ function GetProduct() {
         className="text-2xl md:text-4xl xl:text-5xl font-tektur mb-4"
         data-aos="fade-up"
       >
-        Where to Buy Our Products
+        Lets Get Our Product
       </h2>
       <p
         className="text-md font-adlam md:text-xl xl:text-2xl pb-4"
         data-aos="fade-up"
       >
-        Choose your preferred marketplace to shop our products. Click on the
-        icons below!
+        Choose your preferred Device to play our products. Click on the icons
+        below!
+      </p>
+      <div className="flex justify-center space-x-4 mt-4">
+        <a
+          href="https://drive.google.com/file/d/1HMuwBq_hwlxVAcMoGUohdKjywtodEXn2/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 hover:opacity-75 transition-opacity duration-300"
+            src={androLogo}
+            alt="Android"
+            data-aos="flip-left"
+          />
+        </a>
+        <a
+          href="https://drive.google.com/file/d/15jV_GAKlz7IsJbJWiHbsN3Cc-0eav39R/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 hover:opacity-75 transition-opacity duration-300"
+            src={winLogo}
+            alt="Windows"
+            data-aos="flip-left"
+          />
+        </a>
+      </div>
+      <h2
+        className="text-2xl md:text-4xl xl:text-5xl font-tektur mb-4 mt-16"
+        data-aos="fade-up"
+      >
+        COMING SOON AVAILABLE ON MARKETPLACE
+      </h2>
+      <p
+        className="text-md font-adlam md:text-xl xl:text-2xl pb-4"
+        data-aos="fade-up"
+      >
+        Please wait our products
       </p>
       <div className="flex justify-center space-x-4 mt-4">
         <a
@@ -58,11 +98,7 @@ function GetProduct() {
             data-aos="flip-left"
           />
         </a>
-        <a
-          href={isLoading ? "#" : productLinks.shopee}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 hover:opacity-75 transition-opacity duration-300"
             src={shopeeLogo}
@@ -70,11 +106,7 @@ function GetProduct() {
             data-aos="flip-left"
           />
         </a>
-        <a
-          href={isLoading ? "#" : productLinks.tokped}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             className="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 hover:opacity-75 transition-opacity duration-300"
             src={tokpedLogo}
